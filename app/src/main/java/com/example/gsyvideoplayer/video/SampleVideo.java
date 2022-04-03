@@ -25,9 +25,10 @@ import java.util.List;
 
 /**
  * Created by shuyu on 2016/12/7.
- * 注意
- * 这个播放器的demo配置切换到全屏播放器
- * 这只是单纯的作为全屏播放显示，如果需要做大小屏幕切换，请记得在这里耶设置上视频全屏的需要的自定义配置
+ * 알아 채다
+ * 이 플레이어의 데모 구성은 전체 화면 플레이어로 전환합니다.
+ * 이것은 전체 화면 재생 디스플레이만큼 간단합니다. 
+ * 크기 화면 스위치를 수행 해야하는 경우 여기에서 비디오 전체 화면에서 비디오 전체 화면의 사용자 정의 구성을 기억하십시오.
  */
 
 public class SampleVideo extends StandardGSYVideoPlayer {
@@ -42,18 +43,18 @@ public class SampleVideo extends StandardGSYVideoPlayer {
 
     private List<SwitchVideoModel> mUrlList = new ArrayList<>();
 
-    //记住切换数据源类型
+    //데이터 소스 유형을 전환하는 것을 기억하십시오
     private int mType = 0;
 
     private int mTransformSize = 0;
 
-    //数据源
+    //데이터 원본
     private int mSourcePosition = 0;
 
-    private String mTypeText = "标准";
+    private String mTypeText = "기준";
 
     /**
-     * 1.5.0开始加入，如果需要不同布局区分功能，需要重载
+     * 1.5.0시작 조인, 다른 레이아웃 구별이 필요한 경우 과부하가 필요합니다.
      */
     public SampleVideo(Context context, Boolean fullFlag) {
         super(context, fullFlag);
@@ -79,7 +80,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
         mChangeRotate = (TextView) findViewById(R.id.change_rotate);
         mChangeTransform = (TextView) findViewById(R.id.change_transform);
 
-        //切换清晰度
+        //선명도 전환
         mMoreScale.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,7 +102,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
             }
         });
 
-        //切换视频清晰度
+        //비디오 정의를 전환하십시오
         mSwitchSize.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -109,7 +110,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
             }
         });
 
-        //旋转播放角度
+        //회전 재생 각도
         mChangeRotate.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,7 +127,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
             }
         });
 
-        //镜像旋转
+        //거울 회전
         mChangeTransform.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -147,7 +148,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
     }
 
     /**
-     * 需要在尺寸发生变化的时候重新处理
+     * 치수가 변경 될 때 재 처리해야합니다
      */
     @Override
     public void onSurfaceSizeChanged(Surface surface, int width, int height) {
@@ -163,8 +164,8 @@ public class SampleVideo extends StandardGSYVideoPlayer {
     }
 
     /**
-     * 处理镜像旋转
-     * 注意，暂停时
+     * 처리 미러 회전
+     * 그것이 일시 중지 될 때 주목하십시오
      */
     protected void resolveTransform() {
         switch (mTransformSize) {
@@ -197,10 +198,10 @@ public class SampleVideo extends StandardGSYVideoPlayer {
 
 
     /**
-     * 设置播放URL
+     * 설정 재생 URL
      *
-     * @param url           播放url
-     * @param cacheWithPlay 是否边播边缓存
+     * @param url           URL을 재생하십시오
+     * @param cacheWithPlay 그것이 잠시 여부
      * @param title         title
      * @return
      */
@@ -210,11 +211,11 @@ public class SampleVideo extends StandardGSYVideoPlayer {
     }
 
     /**
-     * 设置播放URL
+     * 설정 재생 URL
      *
-     * @param url           播放url
-     * @param cacheWithPlay 是否边播边缓存
-     * @param cachePath     缓存路径，如果是M3U8或者HLS，请设置为false
+     * @param url           URL을 재생하십시오
+     * @param cacheWithPlay 그것이 잠시 여부
+     * @param cachePath     캐시 경로, M3U8 또는 HLS 인 경우 false로 설정하십시오.
      * @param title         title
      * @return
      */
@@ -230,7 +231,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
 
 
     /**
-     * 全屏时将对应处理参数逻辑赋给全屏播放器
+     * 해당 처리 매개 변수 논리는 전체 화면에서 전체 화면 플레이어에 할당됩니다.
      *
      * @param context
      * @param actionBar
@@ -248,15 +249,16 @@ public class SampleVideo extends StandardGSYVideoPlayer {
         //sampleVideo.resolveTransform();
         sampleVideo.resolveTypeUI();
         //sampleVideo.resolveRotateUI();
-        //这个播放器的demo配置切换到全屏播放器
-        //这只是单纯的作为全屏播放显示，如果需要做大小屏幕切换，请记得在这里耶设置上视频全屏的需要的自定义配置
-        //比如已旋转角度之类的等等
-        //可参考super中的实现
+        // 이 플레이어의 데모 구성은 전체 화면 플레이어로 전환합니다.
+        // 전체 화면 디스플레이만큼 간단합니다. 
+        // 크기 화면 스위치를 수행 해야하는 경우 여기에서 비디오 전체 화면의 전체 화면의 사용자 정의 구성을 기억하십시오.
+        // 예를 들어, 이와 같은 것으로,
+        // 슈퍼 슈퍼의 구현을 참조하십시오
         return sampleVideo;
     }
 
     /**
-     * 推出全屏时将对应处理参数逻辑返回给非播放器
+     * 전체 화면이 도입되면 해당 처리 매개 변수 논리가 비 플레이어로 되돌아갑니다.
      *
      * @param oldF
      * @param vp
@@ -288,8 +290,8 @@ public class SampleVideo extends StandardGSYVideoPlayer {
     }
 
     /**
-     * 显示比例
-     * 注意，GSYVideoType.setShowType是全局静态生效，除非重启APP。
+     * 줌
+     * 알아 채다，GSYVideoType.setShowType앱이 다시 시작되지 않으면 강제로 전역 정적 항목입니다.
      */
     private void resolveTypeUI() {
         if (!mHadPlay) {
@@ -302,13 +304,13 @@ public class SampleVideo extends StandardGSYVideoPlayer {
             mMoreScale.setText("4:3");
             GSYVideoType.setShowType(GSYVideoType.SCREEN_TYPE_4_3);
         } else if (mType == 3) {
-            mMoreScale.setText("全屏");
+            mMoreScale.setText("전체 화면");
             GSYVideoType.setShowType(GSYVideoType.SCREEN_TYPE_FULL);
         } else if (mType == 4) {
-            mMoreScale.setText("拉伸全屏");
+            mMoreScale.setText("치아 화면");
             GSYVideoType.setShowType(GSYVideoType.SCREEN_MATCH_FULL);
         } else if (mType == 0) {
-            mMoreScale.setText("默认比例");
+            mMoreScale.setText("기본 비율");
             GSYVideoType.setShowType(GSYVideoType.SCREEN_TYPE_DEFAULT);
         }
         changeTextureViewShowType();
@@ -318,7 +320,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
     }
 
     /**
-     * 弹出切换清晰度
+     * 팝업 스위칭 선명도
      */
     private void showSwitchDialog() {
         if (!mHadPlay) {

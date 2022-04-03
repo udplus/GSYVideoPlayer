@@ -175,7 +175,7 @@
             android:gravity="center"
             android:minEms="5"
             android:paddingLeft="10dp"
-            android:text="旋转镜像"
+            android:text="회전 거울"
             android:textColor="@android:color/white"
             android:textSize="13sp" />
 
@@ -186,7 +186,7 @@
             android:gravity="center"
             android:minEms="5"
             android:paddingLeft="10dp"
-            android:text="旋转画面"
+            android:text="회전 화면"
             android:textColor="@android:color/white"
             android:textSize="13sp" />
 
@@ -197,7 +197,7 @@
             android:gravity="center"
             android:minEms="5"
             android:paddingLeft="10dp"
-            android:text="默认比例"
+            android:text="기본 비율"
             android:textColor="@android:color/white"
             android:textSize="13sp" />
     </LinearLayout>

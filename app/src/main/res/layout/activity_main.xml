@@ -19,35 +19,35 @@
             android:id="@+id/open_simple"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:text="简单播放" />
+            android:text="간단한 놀이zz" />
 
         <Button
             android:id="@+id/open_btn"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="打开Video" />
+            android:text="비디오를 엽니다" />
 
         <Button
             android:id="@+id/open_control"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="带控制DEMO" />
+            android:text="통제 데모" />
 
         <Button
             android:id="@+id/open_btn_empty"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="无UI界面" />
+            android:text="UI 인터페이스가 없습니다" />
 
         <Button
             android:id="@+id/open_filter"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="滤镜" />
+            android:text="필터" />
 
 
         <Button
@@ -55,56 +55,56 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="带广告" />
+            android:text="공시 하다" />
 
         <Button
             android:id="@+id/open_btn_ad2"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="带广告2" />
+            android:text="광고 2와 함께" />
 
         <Button
             android:id="@+id/open_btn_pick"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="无缝切换" />
+            android:text="원활한 스위치" />
 
         <Button
             android:id="@+id/list_btn"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="List列表" />
+            android:text="목록" />
 
         <Button
             android:id="@+id/list_btn_2"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="List全屏和小窗口列表" />
+            android:text="전체 화면 및 작은 창 목록을 나열하십시오" />
 
         <Button
             android:id="@+id/view_pager2_activity"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="ViewPager2列表" />
+            android:text="ViewPager2목록" />
 
         <Button
             android:id="@+id/recycler"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="recycler列表" />
+            android:text="recycler목록" />
 
         <Button
             android:id="@+id/open_btn_auto"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="自动recycler列表" />
+            android:text="자동적 인recycler목록" />
 
 
         <Button
@@ -112,21 +112,21 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="recycler全屏和小窗口列表" />
+            android:text="recycler전체 화면 및 작은 창 목록" />
 
         <Button
             android:id="@+id/list_detail"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Detail模式" />
+            android:text="Detail모델" />
 
         <Button
             android:id="@+id/list_detail_list"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Detail列表模式，切换下一集" />
+            android:text="Detail목록 모드, 다음 에피소드를 전환하십시오" />
 
 
         <Button
@@ -134,7 +134,7 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Web detail模式" />
+            android:text="Web detail모델" />
 
 
         <Button
@@ -142,49 +142,49 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="弹幕demo" />
+            android:text="크루즈 데모" />
 
         <Button
             android:id="@+id/fragment_video"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Fragment下使用" />
+            android:text="Fragment사용" />
 
         <Button
             android:id="@+id/more_type"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="多类型模式" />
+            android:text="멀티 타입 모드" />
 
         <Button
             android:id="@+id/input_type"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="输入url" />
+            android:text="입력하다url" />
 
         <Button
             android:id="@+id/open_scroll"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="联动detail" />
+            android:text="결합detail" />
 
         <Button
             android:id="@+id/open_window"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="悬浮窗口" />
+            android:text="부동 창" />
 
         <Button
             android:id="@+id/open_btn_multi"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="多任务支持" />
+            android:text="멀티 태스킹 지원" />
 
 
         <Button
@@ -192,7 +192,7 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="列表详情切换" />
+            android:text="자세한 내용을 나열하십시오" />
 
 
         <Button
@@ -200,7 +200,7 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="列表带广告模式" />
+            android:text="광고 모드로 목록" />
 
 
         <Button
@@ -208,49 +208,49 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="硬解码支持" />
+            android:text="하드 솔루션 지원" />
 
         <Button
             android:id="@+id/detail_download_activity"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="缓存下载支持" />
+            android:text="캐시 다운로드 지원" />
 
         <Button
             android:id="@+id/detail_normal_activity"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="普通 Activity" />
+            android:text="평범한 Activity" />
 
         <Button
             android:id="@+id/open_custom_exo"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="自定义Exo" />
+            android:text="사용자 정의Exo" />
 
         <Button
             android:id="@+id/detail_subtitle_activity"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="自定义Exo支持字幕" />
+            android:text="사용자 정의Exo자막 지원" />
 
         <Button
             android:id="@+id/detail_audio_activity"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="音频" />
+            android:text="오디오" />
 
         <Button
             android:id="@+id/change_core"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Ijk 内核" />
+            android:text="Ijk 핵심" />
 
         <Button
             android:id="@+id/clear_cache"

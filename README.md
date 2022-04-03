@@ -1,28 +1,27 @@
 
 ![](./img/home_logo.png)
 
-## 基于[IJKPlayer](https://github.com/Bilibili/ijkplayer)（兼容系统MediaPlayer与EXOPlayer2），实现了多功能的视频播放器。 (请仔细阅读下方各项说明，大多数问题可在下方找到解答)。
+## 기준으로[IJKPlayer](https://github.com/Bilibili/ijkplayer)（兼容系统MediaPlayer与EXOPlayer2），实现了多功能的视频播放器。 (请仔细阅读下方各项说明，大多数问题可在下方找到解答)。
 
-> ## [如果克隆太慢或者图片看不到，可尝试从码云地址下载](https://gitee.com/CarGuo/GSYVideoPlayer)
+> ## [클론이 너무 느리거나 그림이 볼 수없는 경우 코드 클라우드 주소에서 다운로드하려고 시도 할 수 있습니다.](https://gitee.com/CarGuo/GSYVideoPlayer)
 
 类型 | 功能
 -------- | ---
-**缓存**|**边播边缓存，使用了[AndroidVideoCache](https://github.com/danikula/AndroidVideoCache)；ExoPlayer使用SimpleCache。**
+**缓存**|**빵이 버퍼링됩니다[AndroidVideoCache](https://github.com/danikula/AndroidVideoCache)；ExoPlayer使用SimpleCache。**
 **协议**|**h263\4\5、Https、concat、rtsp、hls、rtmp、crypto、mpeg等等。[（ijk模式格式支持）](https://github.com/CarGuo/GSYVideoPlayer/blob/master/doc/DECODERS.md)**
-**滤镜**|**简单滤镜（马赛克、黑白、色彩过滤、高斯、模糊、模糊等等20多种）、动画、（水印、画面多重播放等）。**
-**帧图**|**视频第一帧、视频帧截图功能，视频生成gif功能。**
-**播放**|**列表播放、列表连续播放、重力旋转与手动旋转、视频本身rotation旋转属性、快播和慢播、网络视频加载速度。**
-**画面**|**调整显示比例:默认、16:9、4:3、填充；播放时旋转画面角度（0,90,180,270）；镜像旋转。**
-**内核**|**IJKPlayer、EXOPlayer、MediaPlayer切换、自定义内核**
-**布局**|**全屏与非全屏两套布局切换、没有任何操作控件的纯播放支持、弹幕功能、继承自定义任何布局。**
-**播放**|**单例播放、多个同时播放、视频列表滑动自动播放、列表切换详情页面无缝播放。**
-**窗口**|**小窗口、多窗体下（包括桌面）的小窗口播放。**
-**广告**|**片头广告、跳过广告支持、中间插入广告功能。**
-**字幕**|**[exo2模式下支持自定增加外挂字幕](https://github.com/CarGuo/GSYVideoPlayer/tree/master/app/src/main/java/com/example/gsyvideoplayer/exosubtitle)。**
-**dash**|**exo2 模式支持dash**
-**更多**|**暂停前后台切换不黑屏；调整不同清晰度的支持；无缝切换支持；锁定/解锁全屏点击功能；进度条小窗口预览（测试）。**
-**自定义**|**可自定义渲染层、自定义管理层、自定义播放层（控制层）、自定义缓存层。**
-
+**滤镜**|**간단한 필터 (모자이크, 흑백, 색상 여과, 가우스, 흐림, 흐림 등), 애니메이션, (워터 마크, 다중 재생 등).**
+** 프레임 ** | ** 비디오 첫 번째 프레임, 비디오 프레임 스크린 샷 기능, 비디오 GIF 기능을 생성합니다.**
+** 플레이 ** | ** 목록 재생, 연속 재생, 중력 회전 및 수동 회전, 비디오 자체는 속성, 빠른 방송 및 느린 방송, 네트워크 비디오 로딩 속도를 회전합니다.**
+** 이미지 ** | ** 조정 표시비 : 기본값, 16 : 9, 4 : 3, 충전; 재생 중에 회전 스크린 각 (0,90,180,270). 미러 회전. **
+** 핵 ** | ** ijkplayer, exoplayer, mediaplayer 스위치, 맞춤 커널 **
+** 레이아웃 ** | ** 전체 화면 및 비 전체 화면 두 개의 레이아웃 두 세트, 순수한 재생 지원, 자전 가능성, 상속 가능, 상속 가능한 사용자 정의. **
+** PLAY ** | ** 당신의 일종재 재종, 다람 동시 재종, 비디 오빠 **
+** 창 ** | ** 작은 창, 다중 양식 (바탕 화면 포함), 재생. **
+** 광고 ** | ** 트레드 광고, 광고 지원을 건너 뛰고, 중간에 광고 능력을 삽입하십시오. **
+** 자막 ** | ** [EXO2 모드는 자체 특정 증가 플러그인 지원] (https://github.com/carguo/gsyvideoplayer/tree/master/app/src/main/java/com/example/gsyvideoplayer를 지원합니다. / exosubtitle). **
+** 대시 ** | ** exo2 모드 지원 대시 **
+** 더 ** | ** 검정색 화면이없는 정면 및 후면 블록 스위칭; 다른 선명도의 지원을 조정하십시오; 완벽한 스위칭 지원; 전체 화면 잠금 / 잠금 해제 기능; 진행률 막대 작은 창 미리보기 (테스트). **
+** 사용자 정의 ** | ** 렌더링 레이어, 사용자 정의 관리, 사용자 정의 재생 레이어 (제어 계층), 사용자 정의 캐시 레이어를 사용자 정의합니다. **
 [![](https://jitpack.io/v/CarGuo/GSYVideoPlayer.svg)](https://jitpack.io/#CarGuo/GSYVideoPlayer)
 [![Build Status](https://app.travis-ci.com/CarGuo/GSYVideoPlayer.svg?branch=master)](https://app.travis-ci.com/CarGuo/GSYVideoPlayer)
 [![Github Actions](https://github.com/CarGuo/GSYVideoPlayer/workflows/CI/badge.svg)](https://github.com/CarGuo/GSYVideoPlayer/actions)
@@ -34,7 +33,7 @@
 [![GitHub license](https://img.shields.io/github/license/CarGuo/GSYVideoPlayer.svg)](https://github.com/CarGuo/GSYVideoPlayer/blob/master/LICENSE)
 
 
-| 公众号   | 掘金     |  知乎    |  CSDN   |   简书
+| 공공 번호 | Nugget | Zhi | CSDN |
 |---------|---------|--------- |---------|---------|
 | GSYTech  |  [点我](https://juejin.im/user/582aca2ba22b9d006b59ae68/posts)    |   [点我](https://www.zhihu.com/people/carguo)       |   [点我](https://blog.csdn.net/ZuoYueLiang)  |   [点我](https://www.jianshu.com/u/6e613846e1ea)
 
@@ -42,17 +41,15 @@
 ![](http://img.cdn.guoshuyu.cn/WeChat-Code)
 
 ### [--------------Demo APK 下载地址---------------](https://github.com/CarGuo/GSYVideoPlayer/releases)
+## 1, Dependence 사용
 
-## 一、使用依赖
-
-#### 7.0 版本开始使用了anndroidx，support版本请看6.x.x，请查看：[--- 版本更新说明 - 入口](https://github.com/CarGuo/GSYVideoPlayer/blob/master/doc/UPDATE_VERSION.md)。
-
-
-### 1、Jitpack 引入方法（推荐， JCenter 即将关闭）
+#### 7.0 릴리스 시작 AnnDroidX, 지원 버전을 사용하여 다음을 참조하십시오 : [--- 릴리스 업데이트 설명 - 입구] (https://github.com/carguo/gsyvideoplayer/blob/master/doc /update_version.md).
 
 
-#### First、在project下的build.gradle添加
+### 1, JITPACK 소개 방법 (권장, jCenter가 곧 가깝게됩니다)
 
+
+#### 첫째, Project에서 해결 된 Build.Gradle
 ```
 allprojects {
     repositories {
@@ -86,68 +83,63 @@ allprojects {
  implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-x86:v8.1.9-release-jitpack'
  implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-x64:v8.1.9-release-jitpack'
 ```
+#### C, 지원 기타 형식 프로토콜 (MPEG, RTSP, CONCAT, CRYPTO 프로토콜)
 
-#### C、支持其他格式协议的（mpeg，rtsp, concat、crypto协议）
-
-A、B普通版本支持263/264/265等，对于mpeg编码会有声音无画面情况。
-C 引入的so支持mpeg编码和其他补充协议，但是so包相对变大。
-
-```
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-java:v8.1.9-release-jitpack'
-
- //是否需要ExoPlayer模式
- implementation 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.9-release-jitpack'
-
- //更多ijk的编码支持
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-ex_so:v8.1.9-release-jitpack'
+A, B 정상적인 버전 지원 263/264/265 등, MPEG 인코딩에 대한 화면이 없습니다.
+c 도입 된 도입은 MPEG 인코딩 및 기타 보충 프로토콜을 지원하지만 그래서 패키지는 크다.
 
 ```
+ 구현 'com.github.carguo.gsyvideoplayer : gsyvideoplayer-java : v8.1.9-release-jitpack'
 
-#### 代码中的全局切换支持（更多请参看下方文档和demo）
+ / / exoplayer 모드가 필요합니까?
+ 구현 'com.github.carguo.gsyvideoplayer : gsyvideoplayer-exo2 : v8.1.9-release-jitpack'
+
+ // 더 많은 ijk의 코드 지원
+ 구현 'com.github.carguo.gsyvideoplayer : gsyvideoplayer-ex_so : v8.1.9-release-jitpack'
 
 ```
 
-//EXOPlayer内核，支持格式更多
-PlayerFactory.setPlayManager(Exo2PlayerManager.class);
-//系统内核模式
-PlayerFactory.setPlayManager(SystemPlayerManager.class);
-//ijk内核，默认模式
-PlayerFactory.setPlayManager(IjkPlayerManager.class);
+#### の 中 的 中 の 中 (문서 및 데모를 참조하십시오)
+
+```
+
+// exoplayer 커널, 지원 형식의 지원
+PlayerFactory.SetPlayManager (exo2playermanager.class);
+// 시스템 커널 모드
+PlayerFactory.SetPlayManager (SystemPlayerManager.class);
+// ijk core, 기본 모드
+PlayerFactory.setPlayManager (ijkplayermanager.class);
+// exo 캐시 모드, 지원 M3U8, EXO 만 지원
+cachefactory.setCacheManager (ExoplayerCacheManager.Class);
+// 에이전트 캐시 모드, 모든 모드 지원, M3U8 등을 지원하지 마십시오.
+cachefactory.setCacheManager (ProxyCacheManager.class);
 
 
-//exo缓存模式，支持m3u8，只支持exo
-CacheFactory.setCacheManager(ExoPlayerCacheManager.class);
-//代理缓存模式，支持所有模式，不支持m3u8等，默认
-CacheFactory.setCacheManager(ProxyCacheManager.class);
 
-
-
-//切换渲染模式
-GSYVideoType.setShowType(GSYVideoType.SCREEN_MATCH_FULL);
-//默认显示比例
-GSYVideoType.SCREEN_TYPE_DEFAULT = 0;
-//16:9
-GSYVideoType.SCREEN_TYPE_16_9 = 1;
-//4:3
-GSYVideoType.SCREEN_TYPE_4_3 = 2;
-//全屏裁减显示，为了显示正常 CoverImageView 建议使用FrameLayout作为父布局
-GSYVideoType.SCREEN_TYPE_FULL = 4;
-//全屏拉伸显示，使用这个属性时，surface_container建议使用FrameLayout
-GSYVideoType.SCREEN_MATCH_FULL = -4;
-/***
- * SCREEN_TYPE_CUSTOM 下自定义显示比例
- * @param screenScaleRatio  高宽比，如 16：9
- */
-public static void setScreenScaleRatio(float screenScaleRatio)
-
-
-//切换绘制模式
+// 스위치 렌더링 모드
+gsyvideoType.SetShowType (gsyvideoType.screen_match_full);
+/ / 기본 표시 비율
+gsyvideoType.Screen_Type_Default = 0;
+// 16 : 9.
+gsyvideoType.Screen_Type_16_9 = 1;
+// 4 : 3.
+gsyvideoType.Screen_Type_4_3 = 2;
+/ / 전체 화면 컷 디스플레이, 일반 coverimageView를 표시하려면 FrameLayout이 상위 레이아웃으로 사용됩니다.
+gsyvideotype.screen_type_full = 4;
+/ / 전체 화면 스트레치 디스플레이,이 속성을 사용할 때 Surface_Container는 FrameLayout을 사용하는 것이 좋습니다.
+gsyvideotype.screen_match_full = -4;
+/ ***
+ * 사용자 정의 디스플레이 비율에서 screen_type_custom
+ * @param screenscaleratio는 16 : 9
+ * /
+공중 정적 void setscreenscaleratio (float screenscaleratio)
+//스위치 드로잉 모드
 GSYVideoType.setRenderType(GSYVideoType.SUFRACE);
 GSYVideoType.setRenderType(GSYVideoType.GLSURFACE);
 GSYVideoType.setRenderType(GSYVideoType.TEXTURE);
 
 
-//ijk关闭log
+//ijk 닫기 로그
 IjkPlayerManager.setLogLevel(IjkMediaPlayer.IJK_LOG_SILENT);
 
 
@@ -155,7 +147,7 @@ IjkPlayerManager.setLogLevel(IjkMediaPlayer.IJK_LOG_SILENT);
 ExoSourceManager.setExoMediaSourceInterceptListener(new ExoMediaSourceInterceptListener() {
     @Override
     public MediaSource getMediaSource(String dataSource, boolean preview, boolean cacheEnable, boolean isLooping, File cacheDir) {
-        //可自定义MediaSource
+        //맞춤형 MediaSource.
         return null;
     }
 });
@@ -329,7 +321,7 @@ compileSdk 太高|--- **[#3514](https://github.com/CarGuo/GSYVideoPlayer/issues/
 ## License
 
 ```
-请参看IJKPlayer和AndroidVideoCache相关协议。
-项目最开始是从jiecao过来的，改着改着直接重构了。
-偶尔有一变量和方法名可能还有点jiaozi的影子，但是基本是一个新项目。
+IJKPlayer 및 AndroidVideoCacche 관련 프로토콜을 참조하십시오.
+이 프로젝트는 Jiecao에서 시작했으며 직접 재구성하기 위해 직접 변경되었습니다.
+때로는 변수가 있고 메소드 이름은 조금 jiaozi 그림자가있을 수도 있지만 기본적으로 새로운 프로젝트입니다.
 ```

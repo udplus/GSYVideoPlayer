@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         boolean sdPermissionResult = PermissionUtils.verifyPermissions(grantResults);
         if (!sdPermissionResult) {
-            Toast.makeText(this, "没获取到sd卡权限，无法播放本地视频哦", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "SD 카드 사용 권한을 얻지 못하면 지역 비디오를 재생할 수 없습니다.", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -105,19 +105,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.e("################# ","################# ");
         switch (view.getId()) {
             case R.id.open_simple:
-                //简单的播放
+                //간단한 놀이
                 startActivity(new Intent(this, SimpleActivity.class));
                 break;
             case R.id.open_btn:
-                //直接一个页面播放的
+                //직접 연주
                 JumpUtils.goToVideoPlayer(this, binding.openBtn);
                 break;
             case R.id.list_btn:
-                //普通列表播放，只支持全屏，但是不支持屏幕重力旋转，滑动后不持有
+                //일반 목록 재생, 전체 화면 만 지원하지만 화면 중력 회전을 지원하지 않고 슬라이딩 후에도 보류하지 마십시오.
                 JumpUtils.goToVideoPlayer(this);
                 break;
             case R.id.list_btn_2:
-                //支持全屏重力旋转的列表播放，滑动后不会被销毁
+                //전체 화면 중력 회전 지원, 슬라이딩 후에는 파괴되지 않습니다.
                 JumpUtils.goToVideoPlayer2(this);
                 break;
             case R.id.recycler:
@@ -129,27 +129,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 JumpUtils.goToVideoRecyclerPlayer2(this);
                 break;
             case R.id.list_detail:
-                //支持旋转全屏的详情模式
+                //전체 화면을 회전하기위한 세부 사항 모드
                 JumpUtils.goToDetailPlayer(this);
                 break;
             case R.id.list_detail_list:
-                //播放一个连续列表
+                //연속 목록을 재생하십시오
                 JumpUtils.goToDetailListPlayer(this);
                 break;
             case R.id.web_detail:
-                //正常播放，带preview
+                //정상적인 플레이, 미리보기
                 JumpUtils.gotoWebDetail(this);
                 break;
             case R.id.danmaku_video:
-                //播放一个弹幕视频
+                //슬라이더 비디오를 재생하십시오
                 JumpUtils.gotoDanmaku(this);
                 break;
             case R.id.fragment_video:
-                //播放一个弹幕视频
+                //슬라이더 비디오를 재생하십시오
                 JumpUtils.gotoFragment(this);
                 break;
             case R.id.more_type:
-                //跳到多类型详情播放器，比如切换分辨率，旋转等
+                //해상도, 회전 등과 같은 여러 유형의 세부 사항으로 건너 뜁니다.
                 JumpUtils.gotoMoreType(this);
                 break;
             case R.id.input_type:
@@ -165,39 +165,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 JumpUtils.gotoFilter(this);
                 break;
             case R.id.open_btn_pick:
-                //无缝切换
+                //원활한 스위치
                 JumpUtils.goToVideoPickPlayer(this, binding.openBtn);
                 break;
             case R.id.open_btn_auto:
-                //列表自动播放
+                //자동 재생 목록
                 JumpUtils.goToAutoVideoPlayer(this);
                 break;
             case R.id.open_scroll:
-                //列表自动播放
+                //자동 재생 목록
                 JumpUtils.goToScrollDetailPlayer(this);
                 break;
             case R.id.open_window:
-                //多窗体下的悬浮窗
+                //멀티 양식의 서스펜션 창
                 JumpUtils.goToScrollWindow(this);
                 break;
             case R.id.open_btn_ad:
-                //广告
+                //공시 하다
                 JumpUtils.goToVideoADPlayer(this);
                 break;
             case R.id.open_btn_multi:
-                //多个同时播放
+                //다중 동시 재생
                 JumpUtils.goToMultiVideoPlayer(this);
                 break;
             case R.id.open_btn_ad2:
-                //多个同时播放
+                //다중 동시 재생
                 JumpUtils.goToVideoADPlayer2(this);
                 break;
             case R.id.open_list_ad:
-                //多个同时播放
+                //다중 동시 재생
                 JumpUtils.goToADListVideoPlayer(this);
                 break;
             case R.id.open_custom_exo:
-                //多个同时播放
+                //다중 동시 재생
                 JumpUtils.goToDetailExoListPlayer(this);
                 break;
             case R.id.open_switch:
@@ -225,17 +225,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 i += 1;
                 if (i % 3 == 0) {
                     PlayerFactory.setPlayManager(IjkPlayerManager.class);
-                    binding.changeCore.setText("IJK 内核");
+                    binding.changeCore.setText("IJK 핵심");
                 } else if (i % 3 == 1) {
                     PlayerFactory.setPlayManager(Exo2PlayerManager.class);
-                    binding.changeCore.setText("EXO 内核");
+                    binding.changeCore.setText("EXO 핵심");
                 } else if (i % 3 == 2) {
                     PlayerFactory.setPlayManager(SystemPlayerManager.class);
-                    binding.changeCore.setText("系统 内核");
+                    binding.changeCore.setText("系统 핵심");
                 }
                 break;
             case R.id.clear_cache:
-                //清理缓存
+                //캐시를 정리하십시오
                 GSYVideoManager.instance().clearAllDefaultCache(MainActivity.this);
                 //String url = "https://res.exexm.com/cw_145225549855002";
                 //GSYVideoManager.clearDefaultCache(MainActivity.this, url);
